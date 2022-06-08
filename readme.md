@@ -42,15 +42,18 @@ Para testar as requisições criadas, usei o Postman e, dentro do Google, usei a
 
 
 
+
+
+
 * Agora que já temos uma ideia, vamos testar a API. Para isso, basta preencher o formulário com os dados solicitados e clicar em "Enviar"
 
 * Para confirmar que tudo está funcionando, deixei os dados visíveis na tela ao submeter os dados. Mas você também pode testar abrindo o Inspecionar (botão F12 do teclado ou Botão direito do mouse) ou abrindo a porta no Postman, como irei demonstrar no vídeo
 
-  :point_right:  https://youtu.be/JSY-LcyUzjk
+  :point_right: :point_right:  https://youtu.be/JSY-LcyUzjk 👈 👈
 
 
 
-#### Projeto em construção :file_folder:
+
 
 #### Desenvolvido por Gabriela V Brito :computer: 
 
