@@ -1,8 +1,8 @@
-# Desafio CloudOpss
+
+# 🖥️ Desafio CloudOpss 🖥️
 
 
-
-## Sobre:
+## ✏️ Sobre:
 
 Olá, meu nome é Gabriela 
 
@@ -14,7 +14,7 @@ Infelizmente, não consegui trazer todos os pontos propostos, mas irei continuar
 
 
 
-## Tecnologias:
+## 🖱️ Tecnologias:
 
 Aqui está a lista de tecnologias que eu usei até aqui:
 
@@ -28,7 +28,7 @@ Para testar as requisições criadas, usei o Postman e, dentro do Google, usei a
 
 
 
-## Instruções:
+## 📑 Instruções:
 
 * Faça download do zip com todos os arquivos necessários
 
@@ -39,6 +39,8 @@ Para testar as requisições criadas, usei o Postman e, dentro do Google, usei a
 * Com a pasta *"cloudopss"* aberta, selecione a pasta **"templates"** e dê duplo-clique no arquivo **"home"** para visualizar o frontend que eu consegui desenvolver
 
 * Para conseguir visualizar tudo isso melhor, vou deixar uma imagem mostrando como tudo ficou
+
+
 
 * Agora que já temos uma ideia, vamos testar a API. Para isso, basta preencher o formulário com os dados solicitados e clicar em "Enviar"
 
