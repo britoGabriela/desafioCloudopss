@@ -41,7 +41,7 @@ Para testar as requisições criadas, usei o Postman e, dentro do Google, usei a
 * Para conseguir visualizar tudo isso melhor, vou deixar uma imagem mostrando como tudo ficou
 
 
-
+![frontend-img](https://user-images.githubusercontent.com/83607446/172694663-5e648259-2d20-4f26-b0da-b9a73bcc2c4c.png)
 
 
 
