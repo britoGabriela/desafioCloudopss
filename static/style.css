@@ -1,0 +1,386 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@100;200;400;500;600&display=swap');
+
+:root {
+    --cor01: #ffffff;
+    --cor02: #672c70;
+    --cor03: #47164E;
+
+    --fonte-titulo: 'Lobster', cursive;
+    --fonte-titulo2: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+    height: 100vh;
+}
+
+.lado {
+    background-color: var(--cor01);
+    border-radius: 15px;
+    width: 960px;
+    height: 65%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.lado::before {
+    content: "";
+    position: absolute;
+    background-color: var(--cor02);
+    width: 40%;
+    height: 100%;
+    border-radius: 15px 0px 0px 15px;
+    left: 0;
+}
+.lado-a {
+    display: flex;
+}
+.lado-a .segunda-coluna {
+    z-index: 11;
+}
+
+.titulo {
+    font-family: var(--fonte-titulo);
+    font-weight: 200;
+    font-size: 2em;
+    text-transform: capitalize;
+    padding: 10px;
+}
+.t-primeiro {
+    color: var(--cor01);
+}
+.t-segundo {
+    color: var(--cor02);
+}
+
+.paragrafo {
+    padding: 10px;
+    font-family: var(--fonte-titulo2);
+    font-size: 14px;
+    font-style: italic;
+    line-height: 25px;
+    font-weight: 600;
+}
+.p-primeiro {
+    color: var(--cor01);
+}
+.p-segundo {
+    color: var(--cor02);
+}
+
+.btn {
+    margin: 10px;
+    border-radius: 15px;
+    font-size: 10px;
+    font-weight: 600;
+    font-family: var(--fonte-titulo2);
+    text-transform: uppercase;
+    padding: 6px 35px;
+    cursor: pointer;
+    width: 150px;
+    align-self: center;
+}
+.b-primeiro {
+    background-color: transparent;
+    border: 1px solid var(--cor01);
+    color: var(--cor01);
+    transition: 0.5s;
+}
+.b-primeiro:hover{
+    background-color: var(--cor01);
+    color: var(--cor02);
+    font-weight: bolder;
+}
+.b-segundo {
+    background-color: var(--cor02);
+    border: 1px solid var(--cor02);
+    color: var(--cor01);
+    transition: 0.5s;
+}
+.b-segundo:hover {
+    background-color: var(--cor01);
+    color: var(--cor02);
+    font-weight: bolder;
+}
+
+.primeira-coluna {
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+.segunda-coluna {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.midia {
+    margin: 5px 0px;
+}
+.link-midia:not(:first-child) {
+    margin-left: 10px;
+}
+.link-midia .item-midia {
+    transition: 0.5s;
+}
+.link-midia:hover .item-midia {
+    background-color: var(--cor02);
+    color: var(--cor01);
+    border-color: var(--cor02);
+}
+.lista-midia {
+    display: flex;
+    list-style-type: none;
+    padding: 0px 10px;
+}
+.item-midia {
+    border: 1px solid var(--cor02);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: var(--cor02);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+.f-2 {
+    width: 55%;
+}
+.formulario input {
+    height: 32px;
+    border: none;
+    background-color: #eeeeee;
+    padding: 7px;
+    width: 65%;
+}
+.label-input {
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    margin: 6px;
+    border-radius: 15px;
+}
+.tel, .cep, .compl {
+    width: 35%;
+}
+.email, .rua {
+    width: 60%;
+}
+.numero {
+    width: 30%;
+}
+.bairro {
+    width: 45%;
+}
+.cid, .estado, .profissao, .arquivo {
+    width: 50%;
+}
+input#email, input#rua, input#bairro, input#profissao, input#arquivo {
+    width: 78%;
+}
+
+.i-modificado {
+    color: var(--cor02);
+    padding: 0px 0px 0px 12px;
+}
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.juntos {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*  LADO B  */
+
+.lado-b {
+    position: absolute;
+    display: flex;
+}
+
+.lado-b .primeira-coluna {
+    order: 2;
+    z-index: -1;
+}
+.lado-b .segunda-coluna {
+    order: 1;
+    z-index: -1;
+}
+
+.senha {
+    font-family: var(--fonte-titulo2);
+    font-size: 13px;
+    color: var(--cor02);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    line-height: 20px;
+    margin: auto;
+}
+.senha:hover {
+    font-weight: bolder;
+    color: var(--cor03);
+}
+
+
+
+/*  LOGIN JS  */
+
+    /*  Quando clicar em Login:  */
+.login-js .lado-a .primeira-coluna {
+    z-index: -1;
+}
+
+.login-js .lado-b .segunda-coluna {
+    z-index: 11;
+}
+.login-js .lado-b .primeira-coluna {
+    z-index: 13;
+}
+
+.login-js .lado::before {
+    left: 60%;
+    border-radius: 0px 15px 15px 0px;
+    animation: slidein 2s;
+    z-index: 12;
+}
+
+    /*  Quando clicar em Criar conta: */
+.criar-conta-js .lado-b .primeira-coluna {
+    z-index: -1;
+}
+
+.criar-conta-js .lado-a .segunda-coluna {
+    z-index: 11;
+}
+.criar-conta-js .lado-a .primeira-coluna {
+    z-index: 13;
+}
+
+.criar-conta-js .lado::before {
+    left: 0;
+    animation: slideout 2s;
+    z-index: 12;
+}
+
+/* DESLOCAMENTO DO CONTEÚDO atrás da tela roxa */
+.login-js .lado-a .segunda-coluna {
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoParaDireita 2s;
+}
+.criar-conta-js .lado-b .segunda-coluna {
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoParaEsquerda 2s;
+}
+
+/*  ANIMAÇÃO DO CONTEÚDO atrás da tela roxa  */
+@keyframes deslocamentoParaDireita {
+    from {
+        left: 0;
+        z-index: 12;
+        opacity: 0;
+    }
+    25% {
+        left: -80px;
+        z-index: 12;
+        opacity: 0;
+    }
+    50% {
+        left: -100px;
+        z-index: 12;
+        opacity: 0;
+    }
+    to {
+        left: -110px;
+        z-index: -1;
+        opacity: 0;
+    }
+}
+@keyframes deslocamentoParaEsquerda {
+    from {
+        left: 0;
+        z-index: 12;
+        opacity: 0;
+    }
+    25% {
+        left: 80px; 
+        opacity: 0;
+    }
+    50% {
+        left: 100px;
+        opacity: 0;
+    }
+    to {
+        left: 110px;
+        z-index: -1;
+        opacity: 0;
+    }
+}
+
+
+/*  ANIMAÇÂO da tela roxa  */
+@keyframes slidein {
+    from {
+        left: 0;
+        width: 40%;
+    }
+    25% {
+        left: 5%;
+        width: 50%;
+    }
+    50% {
+        left: 25%;
+        width: 60%;
+    }
+    75% {
+        left: 45%;
+        width: 50%;
+    }
+    to {
+        left: 60%;
+        width: 40%;
+    }
+}
+@keyframes slideout {
+    from {
+        left: 60%;
+        width: 40%;
+    }
+    25% {
+        left: 45%;
+        width: 50%;
+    }
+    50% {
+        left: 25%;
+        width: 60%;
+    }
+    75% {
+        left: 5%;
+        width: 50%;
+    }
+    to {
+        left: 0;
+        width: 40%;
+    }
+}

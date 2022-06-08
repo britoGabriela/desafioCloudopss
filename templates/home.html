@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto DevOpss</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="lado lado-a"> <!--Inicio lado A-->
+            <div class="primeira-coluna"> <!--Primeira coluna-->
+                <h1 class="titulo t-primeiro">Bem-vindo de volta!</h1>
+                <p class="paragrafo p-primeiro">Para se conectar <br> faça login com os dados cadastrados</p>
+                <button id="login" class="btn b-primeiro">Login</button>
+            </div> 
+            <div class="segunda-coluna"> <!--Segunda coluna-->
+                <h1 class="titulo t-segundo">Criar cadastro</h1>
+                <p class="paragrafo p-segundo">Insira os dados para cadastrar</p>
+                <form action="http://127.0.0.1:5000/resposta" method="post" class="formulario"> <!--Formulário para inserir dados-->
+                    <label for="nome" class="label-input">
+                        <i class="fa fa-user i-modificado"></i>
+                        <input type="text" id="nome" name="nome" placeholder="Nome completo">
+                    </label>
+
+                    <div class="juntos">
+                        <label for="tel" class="label-input tel">
+                            <i class="fa fa-phone i-modificado"></i>
+                            <input type="tel" id="tel" name="tel" maxlength="11" placeholder="Telefone">
+                        </label>
+                        <label for="email" class="label-input email">
+                            <i class="fa fa-envelope i-modificado"></i>
+                            <input type="email" id="email" name="email" placeholder="Email">
+                        </label>
+                    </div>
+                    
+                    <div class="endereco">
+                        <div class="juntos">
+                            <label for="cep" class="label-input cep">
+                                <i class="fa fa-map-marker i-modificado"></i>
+                                <input type="text" id="cep" name="cep" maxlength="8" placeholder="CEP">
+                            </label>
+                            <label for="rua" class="label-input rua">
+                                <i class="fa fa-map-marker i-modificado"></i>
+                                <input type="text" id="rua" name="rua" placeholder="Rua">
+                            </label>
+                        </div>
+                        <div class="juntos">
+                            <label for="numero" class="label-input numero">
+                                <i class="fa fa-map-marker i-modificado"></i>
+                                <input type="text" id="numero" name="numero" placeholder="Numero">
+                            </label>
+                            <label for="complemento" class="label-input compl">
+                                <i class="fa fa-map-marker i-modificado"></i>
+                                <input type="text" id="complemento" name="complemento" placeholder="Complemento">
+                            </label>
+                            <label for="bairro" class="label-input bairro">
+                                <i class="fa fa-map-marker i-modificado"></i>
+                                <input type="text" id="bairro" name="bairro" placeholder="Bairro">
+                            </label>
+                        </div>
+                        <div class="juntos">
+                            <label for="cidade" class="label-input cid">
+                                <i class="fa fa-map-marker i-modificado"></i>
+                                <input type="text" id="cidade" name="cidade" placeholder="Cidade">
+                            </label>
+                            <label for="estado" class="label-input estado">
+                                <i class="fa fa-map-marker i-modificado"></i>
+                                <input type="text" id="estado" name="estado" placeholder="Estado">
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="juntos">
+                        <label for="profissao" class="label-input profissao">
+                            <i class="fa fa-graduation-cap i-modificado"></i>
+                            <input type="text" id="profissao" name="profissao" placeholder="Profissão">
+                        </label>
+                        <label for="arquivo" class="label-input arquivo">
+                            <i class="fa fa-file i-modificado"></i>
+                            <input type="file" id="arquivo" name="arquivo" placeholder="Arquivo">
+                        </label>
+                    </div>
+
+                    <div class="juntos">
+                        <button class="btn b-segundo" id="limpar" onclick="return limpar()">Limpar</button>
+                        <button class="btn b-segundo" type="submit" id="enviar" onclick="return pergunta()" >Enviar</button>
+                    </div>
+                </form>
+            </div> 
+        </div>
+
+        <div class="lado lado-b"> <!--Ininio lado B-->
+            <div class="primeira-coluna"> <!--Primeira coluna-->
+                <h1 class="titulo t-primeiro">Olá forasteiro!</h1>
+                <p class="paragrafo p-primeiro">Crie uma conta <br> e cadastre seu currículo</p>
+                <button id="criar-conta" class="btn b-primeiro">Criar conta</button>
+            </div> 
+            <div class="segunda-coluna"> <!--Segunda coluna-->
+                <h1 class="titulo t-segundo">Acessar conta</h1>
+                <div class="midia"> <!--Botões de media social-->
+                    <ul class="lista-midia">
+                        <a href="#" class="link-midia">
+                            <li class="item-midia">
+                                <i class="fa fa-facebook-f"></i>
+                            </li>
+                        </a>
+                        <a href="#" class="link-midia">
+                            <li class="item-midia">
+                                <i class="fa fa-google-plus"></i>
+                            </li>
+                        </a>
+                        <a href="#" class="link-midia">
+                            <li class="item-midia">
+                                <i class="fa fa-linkedin-square"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <p class="paragrafo p-segundo">Ou acesse com o email cadastrado</p>
+                <form class="formulario f-2"> <!--Formulário para inserir dados-->
+                    <label class="label-input">
+                        <i class="fa fa-envelope i-modificado"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                    <label class="label-input">
+                        <i class="fa fa-lock i-modificado"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                    <a href="#" class="senha">Esqueceu sua senha?</a>
+                    <button class="btn b-segundo">Login</button>
+                </form>
+            </div> 
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

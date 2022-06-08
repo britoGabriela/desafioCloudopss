@@ -1,0 +1,90 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Cadastro de cliente",
+    "description": "Tela de cadastro de novos clientes",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://cadastrodecliente-devopss.com.br/"
+    }
+  ],
+  "paths": {
+    "/home": {
+      "get": {
+        "summary": "Apresenta o formulário",
+        "description": "Apresenta o formulario com os campos necessários para realizar o cadastro",
+        "responses": {
+          "200": {
+            "description": "sucesso",
+            "content": {
+              "application:/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "nome": {
+                      "type": "string"
+                    },
+                    "tel": {
+                      "type": "string"
+                    },
+                    "email": {
+                      "type": "string"
+                    },
+                    "cep": {
+                      "type": "string"
+                    },
+                    "rua": {
+                      "type": "string"
+                    },
+                    "numero": {
+                      "type": "string"
+                    },
+                    "complemento": {
+                      "type": "string"
+                    },
+                    "bairro": {
+                      "type": "string"
+                    },
+                    "cidade": {
+                      "type": "string"
+                    },
+                    "estado": {
+                      "type": "string"
+                    },
+                    "profissao": {
+                      "type": "string"
+                    },
+                    "arquivo": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/resposta": {
+      "post": {
+        "summary": "Retorna os dados do formulario",
+        "description": "Retorna os dados digitados pelo cliente ao realizar o cadastro.",
+        "responses": {
+          "201": {
+            "description": "sucesso",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
