@@ -18,11 +18,15 @@ Infelizmente, não consegui trazer todos os pontos propostos, mas irei continuar
 
 Aqui está a lista de tecnologias que eu usei até aqui:
 
-Como IDE, utilizei o Visual Studio Code
+Como IDE, utilizei o Visual Studio Code (VSC)
 
 Para desenvolver o frontend, utiizei HTML5, CSS3 e Javascript
 
 Para a criação da API Rest utilizei o Python juntamente com o framework Flask
+
+Para a documentação da API utilizei o Swagger
+
+Para criar o arquivo com logs de nível 1, 2, 3, 4, 5 utilizei a biblioteca logging do Python no VSC
 
 Para testar as requisições criadas, usei o Postman e, dentro do Google, usei as ferramentas de desenvolvedor
 
@@ -36,7 +40,7 @@ Para testar as requisições criadas, usei o Postman e, dentro do Google, usei a
 
 * Utilizando uma IDE no seu computador, também de sua preferência, abra a pasta de arquivos baixada para acessar aos códigos desenvolvidos
 
-* Com a pasta *"cloudopss"* aberta, selecione a pasta **"templates"** e dê duplo-clique no arquivo **"home"** para visualizar o frontend que eu consegui desenvolver
+* Com esta pasta aberta, selecione a pasta **"templates"** e dê duplo-clique no arquivo **"home"** para visualizar o frontend que eu consegui desenvolver
 
 * Para conseguir visualizar tudo isso melhor, vou deixar uma imagem mostrando como tudo ficou
 
